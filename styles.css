@@ -88,109 +88,205 @@ nav ul li a {
 }
 
 
+/* kitchen Items  */
 
-/* Popular Items Section */
-.popular-items-section {
+.kitchen h1 {
+  font-size: 2em;
   text-align: center;
-  padding: 40px 10%;
-  background-color: #f9f9f9;
+  margin: 1em 0;
+  color: #4a4a4a;
 }
 
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
+#kitchen-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.swiper {
-  margin: 20px auto;
-}
-
-.card {
+.kitchen-card {
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  text-align: left;
-  max-width: 300px;
+  position: relative;
 }
 
-.card-image {
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.item-card img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
 }
 
-.card-content {
+.item-card-content {
   padding: 15px;
 }
 
-.card-title {
-  font-size: 18px;
+.item-title {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
   font-weight: bold;
-  margin-bottom: 5px;
+}
+
+.item-price {
+  color: #388e3c;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.item-rating {
+  color: #fbc02d;
+  font-weight: bold;
+}
+
+.item-time {
+  color: #757575;
+  margin-left: 10px;
+}
+
+.item-actions {
+  margin-top: 10px;
+}
+
+.add-button {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #f57c00;
+}
+
+
+
+/* popular items */
+
+.popular_items{
+  height: 100%;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
   color: #333;
 }
 
-.card-price {
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 10px;
+.slider-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.card-rating {
-  font-size: 14px;
-  color: #555;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+.swiper {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card-quantity,
-.add-to-cart-btn {
+.swiper-slide {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
-.minus-btn,
-.plus-btn,
-.add-to-cart-btn {
-  border: none;
-  background-color: #2ebf91;
+.item-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-card img {
+  width: 100%;
+  height: auto;
+}
+
+.item-card-content {
+  padding: 15px;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.item-price {
+  color: #555;
+  font-size: 16px;
+}
+
+.item-rating,
+.item-time {
+  font-size: 14px;
+  color: #777;
+}
+
+.item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter button {
+  background: #ff9800;
   color: #fff;
+  border: none;
   padding: 5px 10px;
   border-radius: 5px;
-  cursor: pointer;
-}
-
-.minus-btn:hover,
-.plus-btn:hover,
-.add-to-cart-btn:hover {
-  background-color: #26a678;
-}
-
-.request-dish-btn {
-  background-color: #2ebf91;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.request-dish-btn:hover {
-  background-color: #26a678;
+.counter button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
 }
 
-/* Swiper Navigation Buttons */
-.swiper-button-prev,
-.swiper-button-next {
-  color: #2ebf91;
+.request-dish {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
-
 
 
 /* Video Section */

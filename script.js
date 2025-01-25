@@ -1,0 +1,229 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const popularItems = [
+    {
+      name: "Home made pizza",
+      price: "₹190",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "pizza.png",
+    },
+    {
+      name: "Tandoori Chicken",
+      price: "₹184",
+      rating: 4.3,
+      time: "15-29 min",
+      image: "chicken_tandoor.png",
+    },
+    {
+      name: "Chilli Chicken",
+      price: "₹116",
+      rating: 4.1,
+      time: "30-40 min",
+      image: "chilli_chicken.png",
+    },
+    {
+      name: "Home Made Pizza",
+      price: "₹120",
+      rating: 4.1,
+      time: "30-40 min",
+      image: "Pizza1.png",
+    },
+    {
+      name: "Home Made Pizza",
+      price: "₹116",
+      rating: 4.1,
+      time: "30-40 min",
+      image: "Pizza2.png",
+    },
+  ];
+
+  const itemsContainer = document.getElementById("popular-items");
+
+  popularItems.forEach((item) => {
+    const slide = document.createElement("div");
+    slide.classList.add("swiper-slide");
+
+    slide.innerHTML = `
+        <div class="item-card">
+          <img src="${item.image}" alt="${item.name}">
+          <div class="item-card-content">
+            <p class="item-title">${item.name}</p>
+            <p class="item-price">${item.price}</p>
+            <p><span class="item-rating">⭐ ${item.rating}</span> <span class="item-time">${item.time}</span></p>
+            <div class="item-actions">
+              <div class="counter">
+                <button class="decrement">-</button>
+                <span class="count">1</span>
+                <button class="increment">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+    itemsContainer.appendChild(slide);
+  });
+
+  // Swiper.js Initialization
+  new Swiper(".swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+  // Counter functionality
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("increment")) {
+      const countElement = e.target.previousElementSibling;
+      countElement.textContent = parseInt(countElement.textContent) + 1;
+    } else if (e.target.classList.contains("decrement")) {
+      const countElement = e.target.nextElementSibling;
+      const currentValue = parseInt(countElement.textContent);
+      if (currentValue > 1) {
+        countElement.textContent = currentValue - 1;
+      }
+    }
+  });
+
+  // Kitchen Section Data Mapping
+  const kitchenData = [
+    {
+      name: "Home made pizza",
+      price: "₹190",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "pizza.jpg",
+      discount: "50%",
+    },
+    {
+      name: "Special Veggie Pizza",
+      price: "₹123",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "veggie.jpg",
+      discount: "20%",
+    },
+    {
+      name: "Gourmet Pizza",
+      price: "₹190",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "gourmet.jpg",
+      discount: "20%",
+    },
+    {
+      name: "Home made pizza",
+      price: "₹190",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "pizza.jpg",
+      discount: "50%",
+    },
+    {
+      name: "Special Veggie Pizza",
+      price: "₹123",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "veggie.jpg",
+      discount: "20%",
+    },
+    {
+      name: "Gourmet Pizza",
+      price: "₹190",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "gourmet.jpg",
+      discount: "20%",
+    },
+    {
+      name: "Home made pizza",
+      price: "₹190",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "pizza.jpg",
+      discount: "50%",
+    },
+    {
+      name: "Special Veggie Pizza",
+      price: "₹123",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "veggie.jpg",
+      discount: "20%",
+    },
+    {
+      name: "Gourmet Pizza",
+      price: "₹190",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "gourmet.jpg",
+      discount: "20%",
+    },
+    {
+      name: "Home made pizza",
+      price: "₹190",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "pizza.jpg",
+      discount: "50%",
+    },
+    {
+      name: "Special Veggie Pizza",
+      price: "₹123",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "veggie.jpg",
+      discount: "20%",
+    },
+    {
+      name: "Gourmet Pizza",
+      price: "₹190",
+      rating: 4.7,
+      time: "50-79 min",
+      image: "gourmet.jpg",
+      discount: "20%",
+    },
+  ];
+
+  const kitchenContainer = document.getElementById("kitchen-section");
+
+  kitchenData.forEach((item) => {
+    const card = document.createElement("div");
+    card.classList.add("kitchen-card");
+
+    card.innerHTML = `
+      <div class="item-card">
+        <div class="discount-badge">${item.discount}</div>
+        <img src="${item.image}" alt="${item.name}">
+        <div class="item-card-content">
+          <p class="item-title">${item.name}</p>
+          <p class="item-price">${item.price}</p>
+          <p><span class="item-rating">⭐ ${item.rating}</span> <span class="item-time">${item.time}</span></p>
+          <div class="item-actions">
+            <button class="add-button">Add</button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    kitchenContainer.appendChild(card);
+  });
+
+  // Add item interaction
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("add-button")) {
+      alert("Item added to your list!");
+    }
+  });
+});
