@@ -87,6 +87,112 @@ nav ul li a {
   height: auto;
 }
 
+
+
+/* Popular Items Section */
+.popular-items-section {
+  text-align: center;
+  padding: 40px 10%;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.swiper {
+  margin: 20px auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  max-width: 300px;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card-price {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-rating {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.card-quantity,
+.add-to-cart-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.minus-btn,
+.plus-btn,
+.add-to-cart-btn {
+  border: none;
+  background-color: #2ebf91;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.minus-btn:hover,
+.plus-btn:hover,
+.add-to-cart-btn:hover {
+  background-color: #26a678;
+}
+
+.request-dish-btn {
+  background-color: #2ebf91;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.request-dish-btn:hover {
+  background-color: #26a678;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #2ebf91;
+}
+
+
+
 /* Video Section */
 .video-section {
   background: linear-gradient(to bottom, #ffffff 50%, #2ebf91 50%);
