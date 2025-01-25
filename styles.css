@@ -124,7 +124,7 @@ nav ul li a:hover {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  color: #333;
+  color: #fff;
 }
 
 .hero-image {
@@ -141,7 +141,9 @@ nav ul li a:hover {
 
 .kitchen{
   background-color: #fff;
-  padding: 8%;
+  height: 110%;
+  padding: 5% 8%;
+  margin-top: 0px;
 }
 
 .kitchen h1 {
@@ -231,16 +233,17 @@ nav ul li a:hover {
 
 /* popular items */
 
-.popular_items{
+.popular-items{
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  padding: 2%;
   background-color: #fff;
 }
 
 .section-title {
   text-align: center;
-  margin: 20px 0;
-  font-size: 24px;
+  font-size: 4vh;
+  margin-bottom: 2vh;
   font-weight: bold;
   color: #333;
 }
@@ -253,9 +256,6 @@ nav ul li a:hover {
 
 .swiper {
   overflow: hidden;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .swiper-slide {
@@ -330,14 +330,15 @@ nav ul li a:hover {
 }
 
 .request-dish {
-  margin: 20px auto;
+  margin: 4vh auto;
   display: block;
-  padding: 10px 20px;
-  background-color: #28a745;
+  height: 48px;
+  width: 210px;
+  background-color: #2ebf91;
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 10px;
+  font-size: .95rem;
   cursor: pointer;
 }
 
