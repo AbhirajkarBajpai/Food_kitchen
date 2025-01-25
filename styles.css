@@ -249,13 +249,30 @@ nav ul li a:hover {
 }
 
 .slider-container {
-  width: 90%;
-  max-width: 1200px;
+  width: 74vw;
   margin: 0 auto;
 }
 
+.swiper-button-prev{
+  height: 7vh;
+  width: auto;
+  left: -5% !important;
+  z-index: 50000000000;
+}
+.swiper-button-next{
+  height: 12vh;
+  width: auto;
+  right: -5% !important;
+  z-index: 5000000;
+}
+
 .swiper {
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
+  gap: 0px;
+}
+.swiper-wrapper{
+  display: flex;
 }
 
 .swiper-slide {
@@ -264,6 +281,7 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   padding: 20px;
+  margin-right: 0px !important;
 }
 
 .item-card {
