@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slide.classList.add("swiper-slide");
 
     slide.innerHTML = `
-        <div class="item-card">
+        <div class="item-card2">
           <img src="${item.image}" alt="${item.name}">
           <div class="item-card-content">
             <p class="item-title">${item.name}</p>
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
     card.classList.add("kitchen-card");
 
     card.innerHTML = `
-      <div class="item-card">
+      <div class="item-card2">
         <div class="discount-badge">${item.discount}</div>
         <img src="${item.image}" alt="${item.name}">
         <div class="item-card-content">
@@ -212,7 +212,12 @@ document.addEventListener("DOMContentLoaded", () => {
             <span class="item-price">${item.price}</span>
           </div>
           <div class="item_lst">
-            <div class="item_RT"><span class="item-rating">⭐ ${item.rating}</span> <span class="item-time">${item.time}</span></div>
+            <div class="item_RT">
+            <div class="item-rating">
+              <img src="rating.png" alt="Star Icon" class="star-icon" />
+              <span class="rating-value">${item.rating}</span>
+            </div> 
+            <span class="item-time">${item.time}</span></div>
             <div class="item-actions">
               <button class="add-button">Add</button>
             </div>
