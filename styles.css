@@ -489,7 +489,7 @@ textarea::placeholder{
 }
 
 
-button {
+.submit_contact{
   height: 6vh;
   width: 20vh;
   background-color: #1AC073;
@@ -508,9 +508,15 @@ button {
 
 /* Footer */
 footer {
-  background-color: #00b754;
+  background-color: #1AC073;
   color: white;
-  padding: 20px 10%;
+  padding: 1.5% 10%;
+}
+footer hr{
+  margin: 2vh auto 2vh;
+  height: 1px;
+  background-color: #ffffff;
+  border: none;
 }
 
 .footer-container {
@@ -523,22 +529,31 @@ footer {
 
 .footer-logo h1 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: Squada One;
 }
 
 .footer-nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 2.3vw;
 }
 
 .footer-nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
+  font-family: Roboto;
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
 }
 
 .footer-social a img {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
