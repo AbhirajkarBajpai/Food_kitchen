@@ -363,23 +363,25 @@ nav ul li a:hover {
 
 /* Video Section */
 .video-section {
-  background: linear-gradient(to bottom, #ffffff 50%, #2ebf91 50%);
-  padding: 50px 10%;
+  background: linear-gradient(to bottom, #ffffff 50%, #C7EACC 50%);
+  padding: 100px 10%;
   text-align: center;
 }
 
 .video-content h2 {
-  font-size: 28px;
-  color: #333; /* Dark color for white background */
+  font-size: 40px;
+  color: #252B42;
   margin-bottom: 15px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 57px;
 }
 
 .video-content p {
-  font-size: 16px;
-  color: #555; /* Slightly lighter color for white background */
+  font-size: 14px;
+  font-weight: 500;
+  color: #737373; 
   margin-bottom: 30px;
-  line-height: 1.6;
+  line-height: 20px;
 }
 
 .video-wrapper {
