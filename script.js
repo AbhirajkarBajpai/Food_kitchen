@@ -207,11 +207,15 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="discount-badge">${item.discount}</div>
         <img src="${item.image}" alt="${item.name}">
         <div class="item-card-content">
-          <p class="item-title">${item.name}</p>
-          <p class="item-price">${item.price}</p>
-          <p><span class="item-rating">⭐ ${item.rating}</span> <span class="item-time">${item.time}</span></p>
-          <div class="item-actions">
-            <button class="add-button">Add</button>
+          <div class="item_TP">
+            <span class="item-title">${item.name}</span>
+            <span class="item-price">${item.price}</span>
+          </div>
+          <div class="item_lst">
+            <div class="item_RT"><span class="item-rating">⭐ ${item.rating}</span> <span class="item-time">${item.time}</span></div>
+            <div class="item-actions">
+              <button class="add-button">Add</button>
+            </div>
           </div>
         </div>
       </div>

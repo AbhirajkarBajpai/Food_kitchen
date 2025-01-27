@@ -189,6 +189,11 @@ nav ul li a:hover {
   height: 150px;
   object-fit: cover;
 }
+.item_TP,.item_lst{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .item-card-content {
   padding: 15px;
