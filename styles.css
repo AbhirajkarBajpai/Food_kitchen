@@ -13,26 +13,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10%;
+  padding: 1.5rem 10%;
   color: white;
 }
 
 header h1 {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 2rem;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Squada One;
 }
 
-header h1 .highlight {
-  background-color: #aa00ff; /* Purple highlight */
-  color: white;
-  padding: 0 5px;
-  border-radius: 4px;
-}
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 2vw;
   margin: 0;
   padding: 0;
 }
@@ -40,8 +36,10 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: Roboto;
   transition: color 0.3s;
 }
 
