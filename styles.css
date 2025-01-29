@@ -155,9 +155,11 @@ nav ul li a:hover {
 
 .kitchen h1 {
   font-size: 2em;
+  font-family: Roboto;
+  font-weight: 800;
   text-align: left;
   margin: 1em 0;
-  color: #4a4a4a;
+  color: #000000;
 }
 
 #kitchen-section {
