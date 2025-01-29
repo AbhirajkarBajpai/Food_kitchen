@@ -195,6 +195,13 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 
+.item_RT{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .51vw;
+}
+
 .item-card-content {
   padding: 15px;
 }
@@ -236,10 +243,31 @@ nav ul li a:hover {
 }
 
 
-.item-time {
+.timekt2 {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: #f5f6f7; 
+  border: 1px solid #ddd; 
+  font-size: 18px;
+  font-weight: 500;
+  color: #222; 
+  text-align: center;
+  box-shadow:  
+  5px 0px 0px 0px rgba(0, 0, 0, 0.5),  
+  -5px 0px 0px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.itm-timekt2{
+  display: inline-block;
+}
+
+
+
+/* .item-time2 {
   color: #757575;
   margin-left: 10px;
-}
+} */
 
 .item-actions {
   margin-top: 10px;

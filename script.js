@@ -217,7 +217,9 @@ document.addEventListener("DOMContentLoaded", () => {
               <img src="rating.png" alt="Star Icon" class="star-icon" />
               <span class="rating-value">${item.rating}</span>
             </div> 
-            <span class="item-time">${item.time}</span></div>
+            <div class="timekt2">
+              <span class="itm-timekt2">50-79 min</span>
+            </div></div>
             <div class="item-actions">
               <button class="add-button">Add</button>
             </div>
