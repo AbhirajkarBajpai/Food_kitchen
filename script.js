@@ -220,8 +220,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="timekt2">
               <span class="itm-timekt2">50-79 min</span>
             </div></div>
-            <div class="item-actions">
-              <button class="add-button">Add</button>
+            <div class="item-actionskt">
+              <button class="add-buttonkt">+</button>
             </div>
           </div>
         </div>

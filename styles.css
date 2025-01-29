@@ -262,23 +262,18 @@ nav ul li a:hover {
   display: inline-block;
 }
 
-
-
-/* .item-time2 {
-  color: #757575;
-  margin-left: 10px;
-} */
-
-.item-actions {
+.item-actionskt {
   margin-top: 10px;
 }
 
-.add-button {
-  background-color: #ff9800;
+.add-buttonkt {
+  background-color: #f3ba00;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
   color: #fff;
-  padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
 }
