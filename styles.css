@@ -173,14 +173,14 @@ nav ul li a:hover {
   position: relative;
 }
 
-.discount-badge {
+.discountkt2 {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #ff5722;
-  color: #fff;
+  top: 0;
+  left: 0;
+  background-color: #f3ba00;
+  color: #000;
   font-size: 0.9em;
-  padding: 5px 10px;
+  padding: 5px 8px;
   border-radius: 5px;
 }
 
@@ -199,7 +199,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .51vw;
+  gap: 1vw;
 }
 
 .item-card-content {
@@ -224,8 +224,8 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5; 
-  height: 4vh;
-  width: 7.5vh;
+  height: 3.4vh;
+  width: 7vh;
   gap: 3px;
   border-radius: 5px; 
   border:.5px solid rgba(0, 0, 0, 0.1);
@@ -233,11 +233,11 @@ nav ul li a:hover {
 }
 
 .star-icon {
-  height: 25px;
+  height: 22px;
 }
 
 .rating-value {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500; 
   color: #000;
 }
@@ -245,11 +245,11 @@ nav ul li a:hover {
 
 .timekt2 {
   display: inline-block;
-  padding: 5px 8px;
+  padding: 5px 6px;
   border-radius: 10px;
   background-color: #f5f6f7; 
   border: 1px solid #ddd; 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: #222; 
   text-align: center;

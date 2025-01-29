@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     card.innerHTML = `
       <div class="item-card2">
-        <div class="discount-badge">${item.discount}</div>
+        <div class="discountkt2">${item.discount}</div>
         <img src="${item.image}" alt="${item.name}">
         <div class="item-card-content">
           <div class="item_TP">
