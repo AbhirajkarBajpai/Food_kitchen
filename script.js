@@ -131,7 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 4.7,
       time: "50-79 min",
       image: "pizza6.png",
-      discount: "20%",
     },
     {
       name: "Home made pizza",
@@ -147,7 +146,6 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 4.7,
       time: "50-79 min",
       image: "pizza3.png",
-      discount: "20%",
     },
     {
       name: "Home made pizza",
@@ -163,7 +161,6 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 4.7,
       time: "50-79 min",
       image: "pizza5.png",
-      discount: "50%",
     },
     {
       name: "Home made pizza",
@@ -179,7 +176,6 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 4.7,
       time: "50-79 min",
       image: "pizza.png",
-      discount: "50%",
     },
     {
       name: "Home made pizza",
@@ -203,7 +199,6 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 4.7,
       time: "50-79 min",
       image: "pizza7.png",
-      discount: "50%",
     },
   ];
 
