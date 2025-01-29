@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 4.7,
       time: "50-79 min",
       image: "pizza.png",
+      discount: "20%",
     },
     {
       name: "Tandoori Chicken",
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 4.1,
       time: "30-40 min",
       image: "Pizza1.png",
+      discount: "20%",
     },
     {
       name: "Home Made Pizza",
@@ -45,20 +47,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     slide.innerHTML = `
         <div class="item-card2">
-          <img src="${item.image}" alt="${item.name}">
-          <div class="item-card-content">
-            <p class="item-title">${item.name}</p>
-            <p class="item-price">${item.price}</p>
-            <p><span class="item-rating">⭐ ${item.rating}</span> <span class="item-time">${item.time}</span></p>
-            <div class="item-actions">
-              <div class="counter">
-                <button class="decrement">-</button>
-                <span class="count">1</span>
-                <button class="increment">+</button>
-              </div>
+        ${item.discount ?`
+          <div class="discountkt2">${item.discount}</div>`:''}
+        <img src="${item.image}" alt="${item.name}">
+        <div class="item-card-content">
+          <div class="item_TP">
+            <span class="item-title">${item.name}</span>
+            <span class="item-price">${item.price}</span>
+          </div>
+          <div class="item_lst">
+            <div class="item_RT">
+            <div class="item-rating">
+              <img src="rating.png" alt="Star Icon" class="star-icon" />
+              <span class="rating-value">${item.rating}</span>
+            </div> 
+            <div class="timekt2">
+              <span class="itm-timekt2">50-79 min</span>
+            </div></div>
+            <div class="item-actionskt">
+              <button class="add-buttonkt">+</button>
             </div>
           </div>
         </div>
+      </div>
       `;
 
     itemsContainer.appendChild(slide);
@@ -204,7 +215,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     card.innerHTML = `
       <div class="item-card2">
-        <div class="discountkt2">${item.discount}</div>
+      ${item.discount ?`
+        <div class="discountkt2">${item.discount}</div>`:''}
         <img src="${item.image}" alt="${item.name}">
         <div class="item-card-content">
           <div class="item_TP">

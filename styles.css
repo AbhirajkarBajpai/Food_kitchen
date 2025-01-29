@@ -337,47 +337,12 @@ nav ul li a:hover {
   margin-right: 0px !important;
 }
 
-.item-card {
-  border: 1px solid #eee;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 300px;
-  text-align: left;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
 .item-card2 > img {
   width: 100%;
   height: auto;
 }
 
-.item-card-content {
-  padding: 15px;
-}
-
-.item-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-.item-price {
-  color: #555;
-  font-size: 16px;
-}
-
-.item-rating,
-.item-time {
-  font-size: 14px;
-  color: #777;
-}
-
-.item-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-}
 
 .counter {
   display: flex;
