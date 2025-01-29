@@ -95,14 +95,14 @@ nav ul li a:hover {
   font-size: 70px;
   font-weight: 400;
   line-height: 82.03px;
-  /* letter-spacing: 1.25px; */
+  font-family: Roboto;
 }
 
 .hero-content p {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: -1.2%;
+  /* letter-spacing: -1.2%; */
   font-family: Roboto;
 }
 
@@ -116,6 +116,7 @@ nav ul li a:hover {
   height: 6.6vh;
   padding: 15px;
   border: none;
+  font-family: Roboto;
   border-radius: 10px 0 0 10px;
 }
 
@@ -209,13 +210,15 @@ nav ul li a:hover {
 .item-title {
   font-size: 1.2em;
   margin: 0;
-  color: #333;
-  font-weight: bold;
+  color: #1B1C21;
+  font-weight: 400;
+  font-family: Roboto;
 }
 
 .item-price {
-  color: #388e3c;
-  font-weight: bold;
+  color: #1B1C21;
+  font-weight: 400;
+  font-family: Roboto;
   margin: 5px 0;
 }
 
@@ -238,8 +241,9 @@ nav ul li a:hover {
 
 .rating-value {
   font-size: 15px;
-  font-weight: 500; 
-  color: #000;
+  font-weight: 400;
+  font-family: Roboto;
+  color: #1B1C21;
 }
 
 
@@ -260,6 +264,9 @@ nav ul li a:hover {
 
 .itm-timekt2{
   display: inline-block;
+  color: #1B1C21;
+  font-weight: 400;
+  font-family: Roboto;
 }
 
 .item-actionskt {
@@ -375,6 +382,8 @@ nav ul li a:hover {
   border: none;
   border-radius: 10px;
   font-size: .95rem;
+  font-weight: 700;
+  font-family: Roboto;
   cursor: pointer;
 }
 
@@ -391,6 +400,7 @@ nav ul li a:hover {
   color: #252B42;
   margin-bottom: 15px;
   font-weight: 700;
+  font-family: Montserrat;
   line-height: 57px;
 }
 
@@ -398,6 +408,7 @@ nav ul li a:hover {
   font-size: 14px;
   font-weight: 500;
   color: #737373; 
+  font-family: Montserrat;
   margin-bottom: 30px;
   line-height: 20px;
 }
@@ -458,14 +469,16 @@ nav ul li a:hover {
 } */
 
 .contact-form span {
-  font-size: 2.6vh;
-  width: 50%;
+  font-size: 24px;
+  /* width: 50%; */
+  font-family: Roboto;
+  font-weight: 400;
   color: #333;
   margin-bottom: 1vh;
 }
 
 .contact-form p {
-  font-size: .6rem;
+  font-size: 12px;
   color: #666;
   margin: 5px auto 35px;
 }
@@ -491,7 +504,7 @@ form {
 }
 
 .form-group input::placeholder{
-  font-style: 'Roboto';
+  font-style: Roboto;
   color: #929292;
 }
 
@@ -504,7 +517,7 @@ textarea {
 }
 
 textarea::placeholder{
-  font-style: 'Roboto';
+  font-style: Roboto;
   color: #929292;
 }
 
@@ -518,6 +531,7 @@ textarea::placeholder{
   border-radius:10px;
   font-size: 1rem;
   font-weight: 400;
+  font-family: Roboto;
   cursor: pointer;
 }
 
