@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slide.innerHTML = `
         <div class="item-card2">
         ${item.discount ?`
-          <div class="discountkt2">${item.discount}</div>`:''}
+          <div class="discountkt2 dis_kt1">${item.discount}</div>`:''}
         <img src="./img/${item.image}" alt="${item.name}">
         <div class="item-card-content">
           <div class="item_TP">
