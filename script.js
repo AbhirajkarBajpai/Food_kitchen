@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".swiper-button-prev",
     },
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 0,
     breakpoints: {
       640: {
         slidesPerView: 2,

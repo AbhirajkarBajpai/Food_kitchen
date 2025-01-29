@@ -311,21 +311,23 @@ nav ul li a:hover {
 }
 
 .slider-container {
-  width: 74vw;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
   margin: 0 auto;
 }
 
 .swiper-button-prev{
+  position: relative;
   height: 7vh;
   width: auto;
-  left: 0% !important;
-  z-index: 50000000000;
 }
 .swiper-button-next{
+  position: relative;
   height: 12vh;
   width: auto;
-  right: 0% !important;
-  z-index: 5000000;
 }
 
 .swiper {
