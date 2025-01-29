@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="item-card2">
         ${item.discount ?`
           <div class="discountkt2">${item.discount}</div>`:''}
-        <img src="${item.image}" alt="${item.name}">
+        <img src="./img/${item.image}" alt="${item.name}">
         <div class="item-card-content">
           <div class="item_TP">
             <span class="item-title">${item.name}</span>
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="item_lst">
             <div class="item_RT">
             <div class="item-rating">
-              <img src="rating.png" alt="Star Icon" class="star-icon" />
+              <img src="./img/rating.png" alt="Star Icon" class="star-icon" />
               <span class="rating-value">${item.rating}</span>
             </div> 
             <div class="timekt2">
@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="item-card2">
       ${item.discount ?`
         <div class="discountkt2">${item.discount}</div>`:''}
-        <img src="${item.image}" alt="${item.name}">
+        <img src="./img/${item.image}" alt="${item.name}">
         <div class="item-card-content">
           <div class="item_TP">
             <span class="item-title">${item.name}</span>
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="item_lst">
             <div class="item_RT">
             <div class="item-rating">
-              <img src="rating.png" alt="Star Icon" class="star-icon" />
+              <img src="./img/rating.png" alt="Star Icon" class="star-icon" />
               <span class="rating-value">${item.rating}</span>
             </div> 
             <div class="timekt2">
